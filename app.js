@@ -7,10 +7,6 @@ app.get("/", function (req, res) {
     res.render("home.ejs");
 });
 
-app.post("/goToGen", function(req, res){
-    res.redirect("/gen");
-});
-
 app.get("/gen", function(req, res){
     res.render("gen.ejs");
 });

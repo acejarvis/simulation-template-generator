@@ -1,5 +1,53 @@
 <% include partials/header %>
 
-<h1>Generate New Scenario</h1>
+    <h1>Generate New Scenario</h1>
 
-<% include partials/footer %>
+    <form action="">
+
+        <h2>General Scenario Information:</h2>
+
+        <label for="scenarioTitle">Scenario Title:</label>
+        <input type="text" id="scenarioTitle" placeholder="Enter Title">
+
+        <p>Target Group:</p>
+        <label for="juniors">Juniors</label>
+        <input type="radio" id="juniors" name="group">
+        <label for="seniors">Seniors</label>
+        <input type="radio" id="seniors" name="group">
+        <label for="all">All Groups</label>
+        <input type="radio" id="all" name="group">
+        <br>
+        <br>
+
+        <label for="scenarioDeveloper">Scenario Developer:</label>
+        <input type="text" id="scenarioDeveloper" placeholder="Enter Name">
+        <br>
+        <br>
+
+        <label for="institution">Institution/Affiliations:</label>
+        <input type="text" id="institution" placeholder="Enter Name">
+
+        <h2>Learning Objectives:</h2>
+
+        <label for="educationalObj">Educational Objectives:</label>
+        <input type="text" id="educationalObj" placeholder="Enter Objectives">
+        <br><br>
+
+        <label for="canmedsObj">CanMeds Objectives:</label>
+        <input type="text" id="canmedsObj" placeholder="Enter Objectives">
+        <br><br>
+        
+        <label for="CRMObj">CRM Objectives:</label>
+        <input type="text" id="CRMObj" placeholder="Enter Objectives">
+        <br><br>
+        
+        <label for="medicalObj">Medical Objectives:</label>
+        <input type="text" id="medicalObj" placeholder="Enter Objectives">
+
+        <h2>Instructor Notes:</h2>
+
+        <h2>Scenario Progression:</h2>
+
+    </form>
+
+    <% include partials/footer %>
