@@ -33,6 +33,10 @@ app.get("/gen", function(req, res){
     res.render("gen.ejs");
 });
 
+app.get("/states", function(req, res){
+    res.render("states.ejs");
+}); /* recent addition */ 
+
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
