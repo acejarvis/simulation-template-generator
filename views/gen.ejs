@@ -2,51 +2,68 @@
 
     <h1>Generate New Scenario</h1>
 
-    <form action="">
+    <form action="/states" method="GET">
 
         <h2>General Scenario Information:</h2>
 
         <label for="scenarioTitle">Scenario Title:</label>
-        <input type="text" id="scenarioTitle" placeholder="Enter Title">
+        <input type="text" id="scenarioTitle" placeholder="Enter Title" name="scenarioTitle" value="">
 
         <p>Target Group:</p>
         <label for="juniors">Juniors</label>
-        <input type="radio" id="juniors" name="group">
+        <input type="radio" id="juniors" name="juniors">
         <label for="seniors">Seniors</label>
-        <input type="radio" id="seniors" name="group">
+        <input type="radio" id="seniors" name="seniors">
         <label for="all">All Groups</label>
-        <input type="radio" id="all" name="group">
+        <input type="radio" id="all" name="all">
         <br>
         <br>
 
         <label for="scenarioDeveloper">Scenario Developer:</label>
-        <input type="text" id="scenarioDeveloper" placeholder="Enter Name">
+        <input type="text" id="scenarioDeveloper" placeholder="Enter Name" name="scenarioDeveloper" value="">
         <br>
         <br>
 
         <label for="institution">Institution/Affiliations:</label>
-        <input type="text" id="institution" placeholder="Enter Name">
+        <input type="text" id="institution" placeholder="Enter Name" name="institution" value="">
 
         <h2>Learning Objectives:</h2>
 
         <label for="educationalObj">Educational Objectives:</label>
-        <input type="text" id="educationalObj" placeholder="Enter Objectives">
+        <input type="text" id="educationalObj" placeholder="Enter Objectives" name="educationalObj" value="">
         <br><br>
 
         <label for="canmedsObj">CanMeds Objectives:</label>
-        <input type="text" id="canmedsObj" placeholder="Enter Objectives">
+        <input type="text" id="canmedsObj" placeholder="Enter Objectives" name="canmedsObjs" value="">
         <br><br>
         
         <label for="CRMObj">CRM Objectives:</label>
-        <input type="text" id="CRMObj" placeholder="Enter Objectives">
+        <input type="text" id="CRMObj" placeholder="Enter Objectives" name="CRMObj" value="">
         <br><br>
         
         <label for="medicalObj">Medical Objectives:</label>
-        <input type="text" id="medicalObj" placeholder="Enter Objectives">
+        <input type="text" id="medicalObj" placeholder="Enter Objectives" name="medicalObj" value="">
 
         <h2>Instructor Notes:</h2>
 
+        <label for="enviroment">Enviroment:</label>
+        <input type="text" id="enviroment" placeholder="Enter Enviroment" name="enviroment" value="">
+        <br><br>
+
+        <label for="errorPaths">Potential Error Paths:</label>
+        <input type="text" id="errorPaths" placeholder="Enter Potential Error Paths" name="errorPaths" value="">
+        <br><br>
+        
+        <label for="expertise">Required Faculty Areas of Expertise:</label>
+        <input type="text" id="expertise" placeholder="Enter Areas of Expertise" name="expertise" value="">
+        <br><br>
+        
+        <label for="labImages">Lab Images:</label>
+        <input type="text" id="labImages" placeholder="Enter URL" name="labImages" value="">
+
         <h2>Scenario Progression:</h2>
+
+        <button>Go to Add States</button>
 
     </form>
 
