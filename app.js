@@ -34,8 +34,13 @@ app.get("/gen", function(req, res){
 });
 
 app.get("/states", function(req, res){
-    res.render("states.ejs");
-}); /* recent addition */ 
+    res.render("states.ejs"); 
+});
+
+app.post("/addInfo", function(req, res){
+    /* some logic goes here */
+    res.redirect("/states")
+}); 
 
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
