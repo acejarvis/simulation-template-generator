@@ -1,2 +1,2 @@
 # SimulationScenarioTemplateGenerator
-Simulation Scenario Template Generator being built for McMaster's CSBL
+Simulation Scenario Template Generator being built for Medical Simmulation Training.
