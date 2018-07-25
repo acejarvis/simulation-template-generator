@@ -1,0 +1,32 @@
+<% include partials/header %>
+<link rel="stylesheet" href="css/styles.css">
+<h1>Generate New Scenario</h1>
+
+<h2>Populate States</h2>
+
+<form name="makeStates" id="makeStates" onsubmit="return validateForm()">
+    <br/>
+    <input type="text" id="state" style="width: 300px; height: 100px"/>
+    <input type="button" id="addState" value="Next State" />
+    <br/>
+</form>
+
+<br>
+<form action="/goToAux" method="POST">
+    <button>Add Aux Info</button>
+</form>
+
+<script>
+    document.getElementById("addState").onclick = function() {
+        var form = document.getElementById("makeStates");
+        var input = document.createElement("input");
+        input.type = "text";
+        input.style = "width: 300px; height: 100px"
+        var br = document.createElement("br");
+        form.appendChild(input);
+        form.appendChild(br);
+        form.appendChild(br);
+    }
+</script>
+
+<% include partials/footer %>
